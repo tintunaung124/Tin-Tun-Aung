@@ -1,171 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tin Tun Aung - Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tin Tun Aung — Computer Science student specializing in Data Science and Artificial Intelligence.">
+  <meta name="theme-color" content="#180b12">
+  <title>Tin Tun Aung | Computer Science &amp; AI</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23180b12'/%3E%3Ctext x='50' y='63' text-anchor='middle' font-family='Arial' font-size='39' font-weight='700' fill='%23dc8da8'%3ETTA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    <header class="header">
-        <a href="#home" class="logo">Tin <span>Tun Aung</span></a>
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about" class="active">About</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-        </nav>
-        <button class="gradient-btn"><b>Contact Me</b></button>
-    </header>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Tin Tun Aung, home">sharath <span>.</span></a>
+      <div class="nav-links" id="primary-menu">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a><a class="nav-resume" href="https://drive.google.com/file/d/1QDEMJFYWWPmCri_4WLxHG82kCgJ-EVH6/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-button menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
 
-
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hi, I'm <span>Tin Tun</span></h1>
-            <h3>I'm a <span>Web Developer</span></h3>
-            <p>I've built several projects like an Amazon Clone, Calculator, and To-do list, and I'm keen on creating functional and visually appealing websites.</p>
-            <div class="social-icons">
-                <a href="https://github.com/tintunaung124" target="_blank" rel="noopener noreferrer">
-                    <i class="bx bxl-github"></i>
-                </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                    <i class="bx bxl-instagram-alt"></i>
-                </a>
-            </div>
-            <div class="btn-group">
-                <a href="#" class="btn">Hire</a>
-                <a href="#contact" class="btn">Contact</a>
-            </div>
+  <main id="main-content">
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div><div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Open to jobs &amp; internships</p>
+          <h1 id="hero-title">Hi, I’m <em>Tin Tun Aung</em></h1>
+          <p class="hero-intro">I like to build useful things with <em>data, AI &amp; code
+          <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a><a class="button button-secondary" href="https://drive.google.com/file/d/1QDEMJFYWWPmCri_4WLxHG82kCgJ-EVH6/view?usp=sharing" target="_blank" rel="noopener noreferrer">View resume <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="#contact">Let’s connect</a></div>
+          <ul class="social-list" aria-label="Social links"><li><a href="https://github.com/tintunaung124" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li><li><a href="https://www.linkedin.com/in/tin-tun-aung-34b93833a/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></li><li><a href="mailto:atintun100@gmail.com">Email <span aria-hidden="true">↗</span></a></li></ul>
         </div>
-        <div class="home-img">
-            <img src="images/Profile_Pic.jpg" alt="Tin Tun Aung">
-        </div>
+        <div class="portrait-wrap reveal" data-delay="1"><div class="portrait-frame"><img src="images/Profile_Pic.jpg" width="640" height="800" alt="Portrait of Tin Tun Aung"></div><p class="portrait-note"><span aria-hidden="true">✦</span> Computer Science · AI specialization</p></div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About Me"><span>Scroll</span><span aria-hidden="true">↓</span></a>
     </section>
 
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/image-1.webp" alt="About Image">
-        </div>
-        <div class="about-content">
-            <h2>About <span>Me</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aut ipsam sed ducimus obcaecati, voluptas quasi! Unde officia necessitatibus autem reiciendis ullam. Architecto reprehenderit voluptas dolor fugit nam quasi quae?</p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-    </section>
+    <section class="section" id="about" aria-labelledby="about-title"><div class="container">
+      <h2 id="about-title">
+    Love figuring out how things work, <em>and making them work better.</em>
+</h2>
+      <div class="about-grid"><div class="about-copy reveal"><p class="lead">I’m a final-year Computer Science student at Stamford International University, focused on Data Science and Artificial Intelligence.</p><p>My work focuses on web development, AI integration, and database management. I enjoy building practical applications, exploring new technologies, and solving problems through software.</p><p>I’m looking for opportunities where I can apply my current skills, learn from experienced teams, and keep growing as a developer.</p></div>
+      <dl class="quick-facts reveal" data-delay="1"><div><dt>Degree</dt><dd>BSc Computing &amp; Intelligent Systems</dd></div><div><dt>Specialization</dt><dd>Data Science &amp; Artificial Intelligence</dd></div><div><dt>University</dt><dd>Stamford International University</dd></div><div><dt>GPA</dt><dd>3.81</dd></div></dl></div>
+    </div></section>
 
-    <section class="services" id="services">
-        <h2 class="heading">Services</h2>
-        <div class="services-container">
-            <div class="service-box">
-                <div class="service-info">
-                    <i class="bx bx-code"></i>
-                    <h4>Frontend Development</h4>
-                    <p>A front-end developer is responsible for designing and implementing the user interface of a website or web application using HTML, CSS, and JavaScript. They create and style web pages to ensure a visually appealing and user-friendly experience. Utilizing HTML for structure, CSS for layout and design, and JavaScript for interactive elements, front-end developers bring static designs to life.Additionally, they optimize web applications for speed and scalability while ensuring compatibility across different browsers and devices.</p>
-                </div>
-            </div> 
-        </div>
-    </section>
+    <section class="section section-tinted" id="skills" aria-labelledby="skills-title"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">02 / Technical skills</p><h2 id="skills-title">The tools behind<br><em>the work.</em></h2></div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><p class="skill-number">01</p><h3>Languages</h3><ul class="tag-list"><li>Python</li><li>Java</li><li>PHP</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Dart</li></ul></article>
+        <article class="skill-card reveal" data-delay="1"><p class="skill-number">02</p><h3>Data &amp; databases</h3><ul class="tag-list"><li>MySQL</li><li>PostgreSQL</li><li>Supabase</li><li>SQLAlchemy</li><li>Alembic</li></ul></article>
+        <article class="skill-card reveal" data-delay="2"><p class="skill-number">03</p><h3>Frameworks &amp; platforms</h3><ul class="tag-list"><li>FastAPI</li><li>Flutter</li><li>Firebase</li><li>Render</li><li>Google ML Kit</li><li>Arduino</li></ul></article>
+        <article class="skill-card reveal" data-delay="3"><p class="skill-number">04</p><h3>Tools</h3><ul class="tag-list"><li>Git &amp; GitHub</li><li>VS Code</li><li>Linux</li><li>Android Studio</li><li>Figma</li><li>Canva</li><li>Cisco Packet Tracer</li></ul></article>
+      </div>
+    </div></section>
 
-    <section class="projects" id="projects">
-        <h2 class="heading">Projects</h2>
-                <div class="projects-box">
-                    <div class="project-card project1">
-                        <img src="project-img/1.png" alt="">
-                        <h3>Coming Soon Project</h3>
-                        <p>The "Coming Soon" countdown page is designed to inform visitors about an upcoming launch. It features a dynamic countdown timer coded with HTML, CSS, and JavaScript.</p>
+    <section class="section" id="projects" aria-labelledby="projects-title"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">03 / Featured projects</p><h2 id="projects-title">A few things<em> I've made.</em></h2></div>
+      <div class="project-list">
+        <article class="project-card reveal"><a class="project-media" href="https://opennews-auditor.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Open OpenNews Auditor live site"><img src="project-img/opennews-auditor.png" width="1672" height="941" alt="OpenNews Auditor application interface" loading="lazy"><span>Live project ↗</span></a><div class="project-copy"><p class="project-index">Featured / 01</p><h3>OpenNews Auditor</h3><p>An AI-powered web application that evaluates online news reliability, identifies factual claims, gathers supporting evidence, and presents an explainable trust score.</p><ul class="tag-list"><li>Python</li><li>FastAPI</li><li>JavaScript</li><li>Groq</li><li>Gemini</li><li>Hugging Face</li></ul><div class="project-links"><a href="https://opennews-auditor.onrender.com/" target="_blank" rel="noopener noreferrer">Live demo ↗</a><a href="https://github.com/tintunaung124/OpenNews-Auditor" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a></div></div></article>
+        <article class="project-card reveal"><a class="project-media" href="https://tintunaung124.github.io/Paw-Mart/" target="_blank" rel="noopener noreferrer" aria-label="Open PawMart live site"><img src="project-img/pawmart.png" width="1672" height="941" alt="PawMart pet shopping homepage" loading="lazy"><span>Live project ↗</span></a><div class="project-copy"><p class="project-index">Featured / 02</p><h3>PawMart</h3><p>An online pet shop experience for browsing food, toys, and accessories, supported by a product database and a responsive storefront.</p><ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PostgreSQL</li><li>Supabase</li></ul><div class="project-links"><a href="https://tintunaung124.github.io/Paw-Mart/" target="_blank" rel="noopener noreferrer">Live demo ↗</a><a href="https://github.com/tintunaung124/Paw-Mart" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a></div></div></article>
+        <article class="project-card reveal"><a class="project-media" href="https://tintunaung124.github.io/Cash-Grab-Chaos/" target="_blank" rel="noopener noreferrer" aria-label="Open Cash, Grab &amp; Chaos live site"><img src="project-img/cash-grab-chaos.png" width="1672" height="941" alt="Cash, Grab and Chaos game home screen" loading="lazy"><span>Play game ↗</span></a><div class="project-copy"><p class="project-index">Featured / 03</p><h3>Cash, Grab &amp; Chaos</h3><p>A browser-based road-trip simulation game with interactive driving, branching storylines, resource management, randomized events, and persistent progress.</p><ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><div class="project-links"><a href="https://tintunaung124.github.io/Cash-Grab-Chaos/" target="_blank" rel="noopener noreferrer">Live demo ↗</a><a href="https://github.com/tintunaung124/Cash-Grab-Chaos" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a></div></div></article>
+        <article class="project-card reveal"><a class="project-media" href="https://github.com/tintunaung124/University-Registration-System" target="_blank" rel="noopener noreferrer" aria-label="Open University Registration System repository"><img src="project-img/university.png" width="1672" height="941" alt="University Registration System project cover" loading="lazy"><span>View repository ↗</span></a><div class="project-copy"><p class="project-index">Featured / 04</p><h3>University Registration System</h3><p>A university registration system project. The supplied repository is retained as the source for implementation details.</p><ul class="tag-list"><li>Stack details in repository</li></ul><div class="project-links"><a href="https://github.com/tintunaung124/University-Registration-System" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a></div></div></article>
+      </div>
+    </div></section>
 
-                        <h5>Countdown Timer: Real-time countdown displaying days, hours, minutes, and seconds.</h5>
-                        <a href="Coming Soon/index.html" class="btn">Review Project</a>
-                    </div>
-           
-                    <div class="project-card project2">
-                        <img src="project-img/2.png" alt="pic 2">
-                        <h3>Amazon Clone</h3>
-                        <p>The Amazon Clone project is a web development exercise that mimics Amazon's e-commerce platform using HTML, CSS, and JavaScript. It features product listings, a responsive navigation bar, and a functional shopping cart, with HTML for structure, CSS for styling, and JavaScript for interactive elements like login in and sign up.
-                        </p>
-                        <a href="Amazon Clone/index.html" class="btn">Review Project</a>
-                    </div>
-           
-                    <div class="project-card project3">
-                        <img src="project-img/3.png" alt="pic 3">
-                        <h3>To Do List</h3>
-                        <p>The To-Do List web app, built with HTML, CSS, and JavaScript, helps manage daily tasks. Users can add, complete (with strikethrough), and delete tasks. The clean interface includes an input field, 'Add' button, and task list.</p>
-                        <a href="To Do Lists/index.html" class="btn">Review Project</a>
-                    </div>
-           
-                    <div class="project-card project4">
-                        <img src="project-img/4.png" alt="pic4">
-                        <h3>Coffee Shop Landing Page</h3>
-                        <p>This website features a stylish layout for a coffee shop, including a prominent header with a call-to-action, a section about the shop's story, an overview of coffee offerings, and a concise footer with essential information. The design is clean and responsive, making it visually appealing and user-friendly on various devices.
+    <section class="section section-tinted" id="education" aria-labelledby="education-title"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">04 / Education &amp; certifications</p><h2 id="education-title">Learning what matters.<br></h2></div>
+      <div class="credentials-grid"><div class="education-list reveal"><article><p class="credential-date">Nov 2024 — Present</p><h3>Bachelor of Science in Computing &amp; Intelligent Systems</h3><p>Stamford International University</p><span>GPA 3.81</span></article><article><p class="credential-date">Completed February 2023</p><h3>High School Equivalency</h3><p>General Educational Development (GED)</p></article></div><div class="certifications reveal" data-delay="1"><p class="eyebrow">Certifications</p><ul><li><span>Java Foundations</span><small>Oracle Academy</small></li><li><span>CS50’s Introduction to Programming with Python</span><small>Harvard</small></li><li><span>Certificate of Appreciation — Big Buddy Program Mentor</span><small>Stamford International University</small></li></ul></div></div>
+    </div></section>
 
-                        </p>
-                        <a href="Coffee Landing Page/index.html" class="btn">Review Project</a>
-                    </div>
-           
-                    <div class="project-card project5">
-                        <img src="project-img/5.png" alt="">
-                        <h3>Accordion</h3>
-                        <p>This project is a FAQ accordion created with HTML, CSS, and JavaScript. Users can click on questions to toggle answers, providing a dynamic and interactive experience. It features a background image, responsive design, and smooth transitions. The JavaScript ensures only one section opens at a time, enhancing readability. This component improves user engagement and accessibility by neatly organizing information.
-                        </p>
-                        <a href="Accordion/index.html" class="btn">Review Project</a>
-                    </div>
-           
-                    <div class="project-card project6">
-                        <img src="project-img/6.jpg" alt="pic 6">
-                        <h3>Calculator</h3>
-                        <p>This project is a simple web calculator built with HTML & CSS. It supports basic arithmetic operations (addition, subtraction, multiplication, and division) and includes functions to clear the display and delete the last character. The design is clean and modern, featuring a responsive layout with a large display and well-sized, rounded buttons for easy interaction.
+    <section class="section contact" id="contact" aria-labelledby="contact-title"><div class="container contact-grid">
+      <div class="section-heading reveal"><p class="eyebrow">05 / Contact</p><h2 id="contact-title">Let work together.</h2></div>
+      <div class="contact-panel reveal" data-delay="1"><p>I’m open to job and internship opportunities where I can contribute, learn, and grow with a strong team.</p><a class="email-link" href="mailto:atintun100@gmail.com">atintun100@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://github.com/tintunaung124" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/tin-tun-aung-34b93833a/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="tel:+66652605600">+66 65 260 5600</a></div></div>
+    </div></section>
+  </main>
 
-                        </p>
-                        <a href="Calculator/index.html" class="btn">Review Project</a>
-                    </div>
-                </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="#">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="name" placeholder="Full Name">
-                </div>
-                <div class="input-box">
-                    <input type="email" placeholder="Email">
-                </div>
-            </div>
-            <div class="input-box">
-                <input type="text" placeholder="Subject">
-            </div>
-            <div class="input-box">
-                <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
-            </div>
-            <div class="input-box">
-                <input type="submit" value="Send Message" class="send-message">
-            </div>
-        </form>
-    </section>
-    
-    
-
-    <footer class="footer">
-        <div class="social-icons">
-            <a href="#"><i class="bx bxl-github"></i></a>
-           
-            <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-           
-        </div>
-
-        
-
-        <p class="tintun">
-            @ Tin Tun Aung | atintun100@gmail.com
-        </p>
-    
-
-    </footer>
-
-
-    <script src="script.js"></script>
+  <footer class="site-footer"><div class="container"><p>© <span id="year">2026</span> Tin Tun Aung</p><a href="#home">Back to top ↑</a></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
